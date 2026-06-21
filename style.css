@@ -13,9 +13,10 @@ html {
 }
 
 body {
-    background-color: #000000;
+    background-color: #000000 !important; /* Restores the solid black website background */
     color: #ffffff;
-    font-family: 'Old Standard TT', serif; /* Google Font applied globally */
+    font-family: 'Old Standard TT', serif;
+    font-size: 23px; /* EXACTLY HERE: Makes all paragraph and body text 7px bigger */
     margin: 0;
     padding: 0;
     display: flex;
