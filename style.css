@@ -1,0 +1,180 @@
+/* Font Face Declarations */
+@font-face {
+    font-family: 'Samarkan';
+    src: url('fonts/samarkan.TTF') format('truetype');
+}
+@font-face {
+    font-family: 'GreenthDiagonal';
+    src: url('fonts/Greenth diagonal.ttf') format('truetype'); /* Ensure file name matches exactly */
+}
+@font-face {
+    font-family: 'OldStandard';
+    src: url('fonts/OldStandard-Regular.ttf') format('truetype'); /* Replace with your actual Old Standard file if local */
+}
+
+/* Global Layout & Theme */
+body {
+    background-color: #000000;
+    color: #ffffff;
+    font-family: 'OldStandard', 'Old Standard TT', serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Samarkan', sans-serif;
+    font-weight: normal;
+    text-align: left;
+}
+
+p {
+    text-align: justify;
+    line-height: 1.6;
+}
+
+a {
+    color: #ffb3b3;
+    text-decoration: underline;
+}
+
+/* Header/Top Bar Navigation */
+.top-bar {
+    background-color: #551f2d;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo {
+    font-family: 'Samarkan', sans-serif;
+    font-size: 50px;
+    color: #ffffff;
+}
+
+.nav-tabs {
+    display: flex;
+    gap: 25px;
+}
+
+.nav-tabs a {
+    font-family: 'GreenthDiagonal', sans-serif;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 5px 10px;
+}
+
+.nav-tabs a:hover {
+    text-decoration: underline;
+}
+
+/* Main Content Container */
+.main-content {
+    flex: 1;
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+/* Shared Section / Text Box Formatting */
+.text-box {
+    background-color: #000000;
+    padding: 20px;
+    margin-bottom: 30px;
+}
+
+/* Footer / Bottom Bar */
+.bottom-bar {
+    background-color: #551f2d;
+    padding: 20px 30px;
+    margin-top: auto;
+}
+
+.footer-text {
+    font-family: 'GreenthDiagonal', sans-serif;
+    font-size: 36px;
+    color: #ffffff;
+    text-align: left;
+}
+
+/* Homepage Specifics */
+.hero-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 40px 0;
+}
+
+.center-pic {
+    max-width: 800px;
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Alternating Layouts for 'The Process' Page */
+.row-left-text {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.row-right-text {
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 30px;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.side-img {
+    width: 45%;
+    height: auto;
+    object-fit: cover;
+}
+
+.side-text {
+    width: 55%;
+}
+
+.center-block {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.big-center-img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+/* Diagonal Heading Utility */
+.diagonal-heading {
+    font-family: 'GreenthDiagonal', sans-serif;
+    display: inline-block;
+    transform: rotate(-15deg);
+    margin-left: 20px;
+    color: #ffffff;
+}
+
+/* Bibliography Specifics */
+.bib-block {
+    margin-bottom: 60px;
+}
+
+.bib-img {
+    display: block;
+    max-width: 600px;
+    width: 100%;
+    height: auto;
+    margin: 0 auto 20px 0; /* Left aligned, margin bottom */
+}
