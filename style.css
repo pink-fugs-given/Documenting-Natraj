@@ -4,7 +4,7 @@
 /* Local Font Face Declaration */
 @font-face {
     font-family: 'Samarkan';
-    src: url('fonts/samarkan.TTF') format('truetype');
+    src: url('samarkan.TTF') format('truetype');
 }
 
 /* Global Layout & Smooth Scrolling Feature */
