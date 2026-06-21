@@ -23,12 +23,18 @@ body {
     min-height: 100vh;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1 {
     font-family: 'Samarkan', sans-serif;
     font-weight: normal;
     text-align: left;
 }
 
+h2, h3 {
+    font-family: 'Old Standard TT', serif;
+    font-weight: normal;
+    text-align: left;
+}
+    
 p {
     text-align: justify; /* Aligns text cleanly along both left and right margins */
     line-height: 1.6;
