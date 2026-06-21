@@ -1,22 +1,21 @@
-/* Font Face Declarations */
+/* Google Fonts Import Link Integration */
+@import url('https://googleapis.com');
+
+/* Local Font Face Declaration */
 @font-face {
     font-family: 'Samarkan';
-    src: url('fonts/samarkan.TTF') format('truetype');
-}
-@font-face {
-    font-family: 'GreenthDiagonal';
-    src: url('fonts/Greenth diagonal.ttf') format('truetype'); /* Ensure file name matches exactly */
-}
-@font-face {
-    font-family: 'OldStandard';
-    src: url('fonts/OldStandard-Regular.ttf') format('truetype'); /* Replace with your actual Old Standard file if local */
+    src: url('samarkan.TTF') format('truetype');
 }
 
-/* Global Layout & Theme */
+/* Global Layout & Smooth Scrolling Feature */
+html {
+    scroll-behavior: smooth; /* Enables a gentle, gliding scroll feel across the website */
+}
+
 body {
     background-color: #000000;
     color: #ffffff;
-    font-family: 'OldStandard', 'Old Standard TT', serif;
+    font-family: 'Old Standard TT', serif; /* Google Font applied globally to bodies */
     margin: 0;
     padding: 0;
     display: flex;
@@ -31,7 +30,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 p {
-    text-align: justify;
+    text-align: justify; /* Aligns text cleanly along both left and right margins */
     line-height: 1.6;
 }
 
@@ -40,9 +39,9 @@ a {
     text-decoration: underline;
 }
 
-/* Header/Top Bar Navigation */
+/* Header/Top Bar Navigation Panel (Updated to Dark Brown) */
 .top-bar {
-    background-color: #551f2d;
+    background-color: #3e2723; /* Deep, luxury dark brown panel color */
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -64,10 +63,10 @@ a {
 }
 
 .nav-tabs a {
-    font-family: 'GreenthDiagonal', sans-serif;
+    font-family: 'Yesteryear', cursive; /* Google Font substituting Greenth Diagonal */
     color: #ffffff;
     text-decoration: none;
-    font-size: 20px;
+    font-size: 24px;
     padding: 5px 10px;
 }
 
@@ -75,7 +74,7 @@ a {
     text-decoration: underline;
 }
 
-/* Main Content Container */
+/* Main Content Container Layout */
 .main-content {
     flex: 1;
     max-width: 1000px;
@@ -84,28 +83,27 @@ a {
     box-sizing: border-box;
 }
 
-/* Shared Section / Text Box Formatting */
 .text-box {
     background-color: #000000;
     padding: 20px;
     margin-bottom: 30px;
 }
 
-/* Footer / Bottom Bar */
+/* Footer / Bottom Bar Panel (Updated to Dark Brown) */
 .bottom-bar {
-    background-color: #551f2d;
+    background-color: #3e2723; /* Consistent deep dark brown theme block */
     padding: 20px 30px;
     margin-top: auto;
 }
 
 .footer-text {
-    font-family: 'GreenthDiagonal', sans-serif;
+    font-family: 'Yesteryear', cursive; /* Google Font applied here */
     font-size: 36px;
     color: #ffffff;
     text-align: left;
 }
 
-/* Homepage Specifics */
+/* Display Elements Layouts */
 .hero-container {
     display: flex;
     justify-content: center;
@@ -120,7 +118,6 @@ a {
     display: block;
 }
 
-/* Alternating Layouts for 'The Process' Page */
 .row-left-text {
     display: flex;
     gap: 30px;
@@ -157,16 +154,16 @@ a {
     margin-bottom: 20px;
 }
 
-/* Diagonal Heading Utility */
+/* Diagonal Heading Utility Style */
 .diagonal-heading {
-    font-family: 'GreenthDiagonal', sans-serif;
+    font-family: 'Yesteryear', cursive;
     display: inline-block;
-    transform: rotate(-15deg);
+    transform: rotate(-10deg);
     margin-left: 20px;
     color: #ffffff;
+    font-size: 28px;
 }
 
-/* Bibliography Specifics */
 .bib-block {
     margin-bottom: 60px;
 }
@@ -176,5 +173,5 @@ a {
     max-width: 600px;
     width: 100%;
     height: auto;
-    margin: 0 auto 20px 0; /* Left aligned, margin bottom */
+    margin: 0 auto 20px 0;
 }
