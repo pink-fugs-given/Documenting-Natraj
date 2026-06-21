@@ -1,10 +1,10 @@
-/* Google Fonts Import Link Integration */
+/* Google Fonts Import Link Integration (Only Old Standard TT) */
 @import url('https://googleapis.com');
 
 /* Local Font Face Declaration */
 @font-face {
     font-family: 'Samarkan';
-    src: url('samarkan.TTF') format('truetype');
+    src: url('fonts/samarkan.TTF') format('truetype');
 }
 
 /* Global Layout & Smooth Scrolling Feature */
@@ -15,7 +15,7 @@ html {
 body {
     background-color: #000000;
     color: #ffffff;
-    font-family: 'Old Standard TT', serif; /* Google Font applied globally to bodies */
+    font-family: 'Old Standard TT', serif; /* Google Font applied globally */
     margin: 0;
     padding: 0;
     display: flex;
@@ -39,7 +39,7 @@ a {
     text-decoration: underline;
 }
 
-/* Header/Top Bar Navigation Panel (Updated to Dark Brown) */
+/* Header/Top Bar Navigation Panel (Dark Brown) */
 .top-bar {
     background-color: #3e2723; /* Deep, luxury dark brown panel color */
     display: flex;
@@ -63,7 +63,7 @@ a {
 }
 
 .nav-tabs a {
-    font-family: 'Yesteryear', cursive; /* Google Font substituting Greenth Diagonal */
+    font-family: 'Old Standard TT', serif; /* Changed to Old Standard */
     color: #ffffff;
     text-decoration: none;
     font-size: 24px;
@@ -89,7 +89,7 @@ a {
     margin-bottom: 30px;
 }
 
-/* Footer / Bottom Bar Panel (Updated to Dark Brown) */
+/* Footer / Bottom Bar Panel (Dark Brown) */
 .bottom-bar {
     background-color: #3e2723; /* Consistent deep dark brown theme block */
     padding: 20px 30px;
@@ -97,7 +97,7 @@ a {
 }
 
 .footer-text {
-    font-family: 'Yesteryear', cursive; /* Google Font applied here */
+    font-family: 'Old Standard TT', serif; /* Changed to Old Standard */
     font-size: 36px;
     color: #ffffff;
     text-align: left;
@@ -156,7 +156,7 @@ a {
 
 /* Diagonal Heading Utility Style */
 .diagonal-heading {
-    font-family: 'Yesteryear', cursive;
+    font-family: 'Old Standard TT', serif; /* Changed to Old Standard */
     display: inline-block;
     transform: rotate(-10deg);
     margin-left: 20px;
